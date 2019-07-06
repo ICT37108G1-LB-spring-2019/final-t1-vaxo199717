@@ -1,0 +1,13 @@
+<form [formGroup]='galeryForm' (ngSubmit)='onSubmit()'>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title" formControlName='title'>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Url</label>
+    <input   class="form-control" id="exampleInputPassword1" placeholder="Url" formControlName='url'>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<app-img-item [gallery_arr]='gallery_arr'>
+</app-img-item>

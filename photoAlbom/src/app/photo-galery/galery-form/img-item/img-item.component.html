@@ -1,0 +1,9 @@
+
+<ul class="list-group" *ngFor='let img of gallery_arr; let i = index'>
+  <img [src]="img.url" alt="">
+  <li class="list-group-item disabled">title : {{img.title}}</li>
+  <li class="list-group-item disabled">Score : {{img.score}}</li>
+   <button class="btn btn-primary" (click)='Upvote(i)'>Upvote</button>
+   <button class="btn btn-primary" (click)='downVote(i)'>DownVote</button>
+   <button class="btn btn-danger" (click)='deleteImage(i)'>Delete</button>
+</ul>
